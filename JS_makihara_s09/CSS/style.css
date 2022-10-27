@@ -1,0 +1,257 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* https://saruwakakun.com/html-css/reference/box-sizing */
+}
+
+.main{
+  font-size: 1.2rem;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, rgb(0, 42, 255), #1a93bc);
+  position: relative;
+  /* overflow: hidden; */
+    /* 余計な余白をとるのがoveflow hidden */
+  }
+
+/* nav{
+  display: flex;
+  width: 80%;
+  margin: 50px auto;
+  align-items: center;
+  font-weight: 550;
+  justify-content: space-between;
+} */
+.title{
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* left 50%でtransform: translatX(-50%);で上手くいかず、理由が？？？ */
+  width: 800px;
+  height: 80px;
+  z-index: 1;
+  background-color: #e74c3c;
+  animation: bg-color 10s infinite;}
+  @keyframes bg-color {
+  0% { background-color: white; }
+  20% { background-color: #0f62f1; }
+  40% { background-color: rgba(0, 251, 255, 0.929); }
+  60% { background-color: yellow; }
+  80% { background-color: blue; }
+  100% { background-color: white; }
+}
+h1{
+  padding-top: 30px;
+  text-emphasis-color: white;
+  text-align: center;
+  /* vertical-align: middle; */
+}
+h1::first-letter {
+     font-weight: bold;
+     font-size: 40px;}
+
+
+.information{
+  background-color: linear-gradient(to right, rgb(31, 9, 110), rgb(0, 42, 255));
+  width: 50%;
+  height: 100%;}
+  /* position: absolute;
+  top: 80%;
+  left: 0%;
+  transform: translateY(-50%);
+  } */
+
+#circle{
+  width: 550px;
+  height: 550px;
+  /* background: green; */
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  left: -10%;
+  transform: rotate(0deg);
+  }
+
+.feature{
+  position: absolute;
+  color: white;
+  ;}
+.one{
+  display: flex;
+  top: 325px;
+  right: 0px;}
+.two{
+  top: 55px;
+  right: 290px;
+  transform: rotate(-120deg);}
+.three{
+  top: 440px;
+  right: 375px;
+  transform: rotate(-240deg);}
+/* #btn1{
+  margin: 0 10px 0 10px;
+  background: #0066CC;
+  color:#fff;
+     background-repeat: no-repeat;
+    background-color: #ffd61a;
+    background-position: 100% 0;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right,blue 0%, blue 50%, #ffd61a 50%, #ffd61a 100%);
+    transition: color 0.4s, background-position 0.4s;
+  }
+.btn1:hover {
+    background-position: 0 0;
+    color: white;
+  }  */
+
+.select{
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    left: 35%;
+  }
+
+.border0{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 36%;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+
+/* .control{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateY(-70%);
+ } */
+
+ .a2{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  padding-top: 15px;
+  background-color: white;
+  vertical-align: middle;
+  text-align: center;
+  width: 200px;
+  height: 50px;}
+.border2{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 53%;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .result{
+  position: absolute;
+  top: 35%;
+  left: 80%;
+  text-align: center;
+  z-index: 1;
+} */
+
+.a1{
+  position: absolute;
+  top: 30%;
+  right: 16%;
+  padding-top: 15px;
+  text-align: center;
+  background-color: white;
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 200px;
+  height: 50px;}
+
+.border1{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 19%;
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    }
+    
+.overlay{
+  width: 0;
+  height: 0;
+  transform: translateX(-20%);
+  border-top: 400px solid white;
+  border-right: 400px solid transparent;
+  border-bottom: 400px solid white;
+  border-left: 400px solid white;
+}
+
+img{
+  padding: 5px;
+  max-width: 100%;
+  height: auto;
+}
+
+.tb{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-20%);
+  left: 80%;
+}
+  /* じゃんけんの画像が出る箱を定義 */
+
+
+  .snow {
+    /*雪の色*/
+    color: snow;
+    /*雪の大きさ*/
+    font-size: 15px;
+    /*初期位置*/
+    position: fixed;
+    top: 0%;
+    /*雪を適当な幅で降らせる*/
+    text-shadow:
+    5vw   -300px 3px,
+    10vw  -300px 3px,
+    20vw  -300px 3px,
+    30vw  -300px 3px,
+    39vw  -250px 2px,
+    42vw  -340px 5px,
+    56vw  -150px 2px,
+    63vw  -180px 2px,
+    78vw  -220px 4px,
+    86vw  -320px 9px,
+    94vw  -170px 7px;
+    /*雪アニメーション1*/
+    animation: anim1 8s linear infinite;
+  }
+ 
+  @keyframes anim1 {
+      0% {transform:rotate(0deg);}
+     90% {opacity:0.8;}
+     100% {transform:rotate(20deg);top:100%;opacity:0;}
+  }
+
+
+  /* opacity
+不透明度: 1 ー 完全に不透明な状態となります。(初期値)
+不透明度: 0 ー 完全に透明な状態となり、画面に表示されなくなります。
+0.0～1.0の範囲外で設定した場合 ー この範囲内に収めて適用されます */
+
+/* https://rui-log.com/css_make-it-snow/#index_id0 */
+
+  
+ 

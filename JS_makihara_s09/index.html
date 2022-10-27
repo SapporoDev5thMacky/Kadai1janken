@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>じゃんけん</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- <link rel="stylesheet" href="./slick/slick.css"/>
+  <link rel="stylesheet" href="./slick/slick-theme.css"/> -->
+  <link rel="stylesheet" href="css/style.css"/>
+  <!-- <Script src="main.js" defer></Script> -->
+</head>
+<body>
+  <div class="main">
+      <div class="title">
+        <h1>じゃんけん</h1>
+      </div>
+
+    <div class="information">
+      <div class="overlay"></div>
+      <div class="border0">
+        <p id="boxA"><img id="mine"></p>
+      </div>
+      <div id="circle">
+        <div class="feature one">
+          <p> Fight! Fight!</p>
+         </div>
+         <div class="feature two">
+          <p>Go for it!</p>
+         </div>
+         <div class="feature three">
+          <p>Hang in there!</p>
+         </div>         
+
+
+      <!-- circleの/div -->
+      </div>
+    <!-- informationの/div -->
+    </div>
+    
+    <div class="control">
+      <P class="a2">相手</P>
+      <div class="border2">
+      <p id="boxB"><img id="hers"></p>
+      </div>
+
+
+    <div class="result">
+      <P class="a1">結果</P>
+      <div class="border1">
+      <p id="boxC"></p></div>
+    </div>
+
+
+    <!-- controlの/div -->
+    </div>
+
+    <!-- <table class="tb">
+      <tr>
+      <td>1</td>
+      <td id="r1"></td>
+      </tr>
+      <tr>
+      <td>2</td>
+      <td id="r2"></td>
+      </tr>
+      </table> -->
+
+      <!-- 上記を書き始めたら、下のボタンが動かなくなった
+      理由が分からない -->
+
+      <div class="select">
+        <button id="btn0">グー</button>
+        <button id="btn1">チョキ</button>
+        <button id="btn2">パー</button>
+     </div>
+
+     <div class="snow">●</div>
+
+ 
+
+
+  <!-- mainのdiv -->
+  </div>
+
+
+<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('.your-class').slick({
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+});
+
+</script> -->
+<script src="./app.js">
+$("select").fadeIn(1000);
+
+
+</script>
+</body>
+</html>
